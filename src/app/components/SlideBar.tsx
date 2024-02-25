@@ -5,12 +5,12 @@ import {ListboxWrapper} from "./ListboxWrapper";
 import { Button } from "@nextui-org/react";
 
 export default function slidebar() {
-  return (
+    return (
     <ListboxWrapper>
-      <Listbox
+    <Listbox
         aria-label="Actions"
         onAction={(key) => alert(key)}
-      >
+    >
         <ListboxItem key="new">Inicio</ListboxItem>
         <ListboxItem key="copy">Explorar</ListboxItem>
         <ListboxItem key="edit">Notificaciones</ListboxItem>
@@ -21,10 +21,10 @@ export default function slidebar() {
         <ListboxItem key="edit">Premium</ListboxItem>
         <ListboxItem key="edit">Perfil</ListboxItem>
         <ListboxItem key="edit">Más opciones</ListboxItem>
-      </Listbox>
+    </Listbox>
         <Button color="primary" size="md" radius="md" variant="shadow">
             Postear
         </Button>
     </ListboxWrapper>
-  );
+    );
 }
