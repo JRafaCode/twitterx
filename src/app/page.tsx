@@ -55,15 +55,23 @@ import TweetCard from './components/TweetCard';
 const Home: NextPage = () => {
   return (
     <div> {/*Columna Central*/}
-      <main className="flex min-h-screen flex-col items-center justify-between ">
-        <section className="w-1/2 mx-auto border-l border-r border-white/20 min-h-screen">
+      <main className="flex flex-row min-h-screen items-center justify-between ">
+        
+        <section className="flex-none w-1/4 min-h-screen p-4"> {/*Columna Izquierda*/}
+          <p>papas</p>
+        </section>
+        <section className="flex-grow border-x border-gray-300 w-1/2 mx-auto border-l border-r border-white/20 min-h-screen"> {/*Columna Central*/}
         <TweetInput />
         
         <TweetCard />
+        </section>
+        <section className="flex-none w-1/4 min-h-screen p-4"> {/*Columna Derecha*/}
+          <p>mamas</p>
         </section>
       </main>
     </div>
   );
 };
+
 
 export default Home; 
