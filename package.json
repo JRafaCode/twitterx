@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/listbox": "^2.1.16",
     "@nextui-org/react": "^2.2.9",
     "@supabase/auth-helpers-nextjs": "^0.9.0",
     "@supabase/supabase-js": "^2.39.7",
     "@tabler/icons-react": "^2.47.0",
+    "boxicons": "^2.1.4",
     "framer-motion": "^11.0.6",
     "next": "14.1.0",
     "react": "^18",

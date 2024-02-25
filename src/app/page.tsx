@@ -6,6 +6,7 @@ import { NextPage } from "next";
 
 import TweetInput from './components/TweetInput';
 import TweetCard from './components/TweetCard';
+import SliderBar from "./components/SlideBar";
 
 /* export default async function Home () {
   const supabase = createServerComponentClient({cookies})
@@ -58,7 +59,7 @@ const Home: NextPage = () => {
       <main className="flex flex-row min-h-screen items-center justify-between ">
         
         <section className="flex-none w-1/4 min-h-screen p-4"> {/*Columna Izquierda*/}
-          <p>papas</p>
+        <SliderBar />
         </section>
         <section className="flex-grow border-x border-gray-300 w-1/2 mx-auto border-l border-r border-white/20 min-h-screen"> {/*Columna Central*/}
         <TweetInput />
