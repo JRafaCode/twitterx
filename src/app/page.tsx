@@ -17,7 +17,7 @@ import TweetCard from './components/TweetCard';
 
   
   const { data: posts } = await supabase.from("posts").select("*, user:users(name, avatar_url, user_name")
- 
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
     {  <AuthButtonServer /> }
@@ -35,17 +35,17 @@ import TweetCard from './components/TweetCard';
           name: userFullName,
           avatar_url: avatarUrl 
         } = user
- }
+}
         return (
           <TweetCard
-             avatarUrl={avatarUrl}
+            avatarUrl={avatarUrl}
             content={content}
             key={id}
             userFullName={userFullName}
             userName={userName} 
             />
             <TweetInput/>
-         )
+        )
     })
       }
       }
@@ -54,15 +54,13 @@ import TweetCard from './components/TweetCard';
 }  */
 const Home: NextPage = () => {
   return (
-    <div>
-      <main>
-        <h1>Inicio</h1>
-        <div >
+    <div> {/*Columna Central*/}
+      <main className="flex min-h-screen flex-col items-center justify-between ">
+        <section className="w-1/2 mx-auto border-l border-r border-white/20 min-h-screen">
         <TweetInput />
-        </div>
-        <div>
+        
         <TweetCard />
-        </div>
+        </section>
       </main>
     </div>
   );
